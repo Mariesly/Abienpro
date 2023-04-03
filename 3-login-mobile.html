@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&family=Roboto&display=swap" rel="stylesheet">
+    <style>
+        :root{
+            --verde-logo: #006a00;
+            --gris-claro-paleta-principal: #C0CEC1;
+            --gris-oscuro-paleta-principal:#6C7B6D;
+            --azul-contraste:#2685A4;
+            --blanco-entrada-texto: #F7F7F7;
+            --beige-paleta-secundaria: #EEEFDC;
+            --verde-paleta-secundaria: #6DA56D;
+            --oscuro: #233124;
+            --fuente1: 'Quicksand', sans-serif;
+            --fuente2: 'Roboto', sans-serif;
+            --sm:14px;
+            --md:16px;
+            --lg:18px;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .login{
+            width: 100%;
+            height: 100vh;
+            display: grid;
+            place-items: center;
+        }
+        .form-container{
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+
+            width: 300px;
+            
+        }
+        .logo{
+            width: 100%;
+            height: 100px;
+            background-image: url(./Abienpro-logo/logo-abienpro.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin-top: 100px;
+        }
+        .title{
+
+            font-family:var(--fuente1);
+            font-size: var(--lg);
+            text-align: center;
+            margin-bottom: 8px;
+        }
+        .subtitle{
+            font-family:var(--fuente1);
+            font-size: var(--md);
+            color:var(--gris-oscuro-paleta-principal);
+            margin-bottom: 32px;
+            margin-top: 0;
+            text-align: center;
+        }
+        .form{
+            display: flex;
+            flex-direction: column;
+        }
+        .label{
+            font-family: var(--fuente1);
+            font-size: var(--sm);
+            font-weight: bold;
+            margin-bottom: 6px;
+        }
+        .input{
+            width: 100%;
+            height: 30px;
+            margin-bottom: 24px;
+            background-color: var(--blanco-entrada-texto);
+            border-radius: 10px;
+            border: 1px solid var(--blanco-entrada-texto);
+            font-family: var(--fuente1);
+
+        }
+        .primary-button{
+            width: 100%;
+            height: 42px;
+            margin-top: 12px;
+            background-color: var(--verde-paleta-secundaria);
+            border: 1px solid var(--verde-paleta-secundaria);
+            border-radius: 10px;
+            font-family: var(--fuente1);
+            font-size: var(--sm);
+            color: white;
+        }
+        .reenvio{
+            justify-self: center;
+            font-family: var(--fuente1);
+            color: var(--gris-oscuro-paleta-principal);
+            font-size: var(--sm);
+            text-align: center;
+        }
+        .reenvio-link{
+            font-family: var(--fuente1);
+            color: var(--verde-paleta-secundaria);
+            font-size: var(--sm);
+
+        }
+        .secundary-button{
+            width: 300px;
+            height: 42px;
+            margin-top: 50px;
+            background-color: white;
+            border: 1px solid var(--verde-paleta-secundaria);
+            border-radius: 10px;
+            font-family: var(--fuente1);
+            font-size: var(--sm);
+            color: var(--verde-paleta-secundaria);
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="login">
+        <div class="form-container">
+            <div class="logo"></div>
+            <form action="/" class="form">
+                <label for="correo" class="label">Email</label>
+                <input type="email" id="correo" placeholder="ejemplo@tuemail.com" class="input">
+                <label for="password" class="label">Contraseña</label>
+                <input type="password" id="password" placeholder="*********" class="input">
+                <input type="submit" value="Iniciar sesion" class="primary-button login-button">
+                <p class="reenvio"><a href="#" class="reenvio-link">Olvidé mi contraseña</a></p>
+            </form>
+            
+        </div>
+        <a href="/"><button class="secundary-button">Registrarse</button></a>
+    </div>
+</body>
+</html>

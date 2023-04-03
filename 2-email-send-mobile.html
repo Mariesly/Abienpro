@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&family=Roboto&display=swap" rel="stylesheet">
+    <style>
+        :root{
+            --verde-logo: #006a00;
+            --gris-claro-paleta-principal: #C0CEC1;
+            --gris-oscuro-paleta-principal:#6C7B6D;
+            --azul-contraste:#2685A4;
+            --blanco-entrada-texto: #F7F7F7;
+            --beige-paleta-secundaria: #EEEFDC;
+            --verde-paleta-secundaria: #6DA56D;
+            --oscuro: #233124;
+            --fuente1: 'Quicksand', sans-serif;
+            --fuente2: 'Roboto', sans-serif;
+            --sm:14px;
+            --md:16px;
+            --lg:18px;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .login{
+            width: 100%;
+            height: 100vh;
+            display: grid;
+            place-items: center;
+        }
+        .message-email{
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+
+            width: 300px;
+            
+        }
+        .logo{
+            width: 100%;
+            height: 100px;
+            background-image: url(./Abienpro-logo/logo-abienpro.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .title{
+
+            font-family:var(--fuente1);
+            font-size: var(--lg);
+            text-align: center;
+            margin-bottom: 8px;
+        }
+        .subtitle{
+            font-family:var(--fuente1);
+            font-size: var(--md);
+            color:var(--gris-oscuro-paleta-principal);
+            margin-bottom: 32px;
+            margin-top: 0;
+            text-align: center;
+        }
+        .email-img{
+            width: 150px;
+            height: 150px;
+            border-radius: 100px;
+            background-color: var(--blanco-entrada-texto);
+            background-image: url(./Abienpro_Icons/email.svg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 60%;
+            justify-self: center;
+            margin-bottom: 32px;
+        }
+        
+        .login-button{
+            width: 100%;
+            height: 42px;
+            margin-top: 12px;
+            background-color: var(--verde-paleta-secundaria);
+            border: 1px solid var(--verde-paleta-secundaria);
+            border-radius: 10px;
+            font-family: var(--fuente1);
+            font-size: var(--sm);
+            color: white;
+        }
+        .reenvio{
+            justify-self: center;
+            font-family: var(--fuente1);
+            color: var(--gris-oscuro-paleta-principal);
+            font-size: var(--sm);
+        }
+        .reenvio-link{
+            font-family: var(--fuente1);
+            color: var(--verde-paleta-secundaria);
+            font-size: var(--sm);
+
+        }
+    </style>
+</head>
+<body>
+    <div class="login">
+        <div class="message-email">
+            <div class="logo"></div>
+            <h1 class="title">!Tu email ha sido enviado!</h1>
+            <p class="subtitle">Consulte su bandeja de entrada para obtener instrucciones sobre cómo restablecer la contraseña.</p>
+            <div class="email-img"></div>
+            <button class=login-button>Iniciar sesión</button>
+            <p class="reenvio">¿No has recibido el email? <a href="#" class="reenvio-link">Reenviar</a></p>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

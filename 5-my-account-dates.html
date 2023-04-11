@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&family=Roboto&display=swap" rel="stylesheet">
+    <style>
+        :root{
+            --verde-logo: #006a00;
+            --gris-claro-paleta-principal: #C0CEC1;
+            --gris-oscuro-paleta-principal:#6C7B6D;
+            --azul-contraste:#2685A4;
+            --blanco-entrada-texto: #F7F7F7;
+            --beige-paleta-secundaria: #EEEFDC;
+            --verde-paleta-secundaria: #6DA56D;
+            --oscuro: #233124;
+            --fuente1: 'Quicksand', sans-serif;
+            --fuente2: 'Roboto', sans-serif;
+            --sm:14px;
+            --md:16px;
+            --lg:18px;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .login{
+            width: 100%;
+            height: calc(100vh - 54px);
+            display: grid;
+            place-items: center;
+        }
+        .form-container{
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+            width: 300px;
+            height: 100%;
+            align-content: center;
+            
+        }
+        .logo{
+            width: 100%;
+            height: 100px;
+            background-image: url(./Abienpro-logo/logo-abienpro.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .title{
+
+            font-family:var(--fuente1);
+            font-size: var(--lg);
+            text-align: center;
+            margin-top: 50px;
+            margin-bottom: 8px;
+        }
+      
+        .form{
+            display: flex;
+            padding: 20px;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .label{
+            font-family: var(--fuente1);
+            font-size: var(--sm);
+            font-weight: bold;
+            margin-bottom: 6px;
+        }
+        .input-password{
+            width: 100%;
+            height: 30px;
+            margin-bottom: 24px;
+            background-color: var(--blanco-entrada-texto);
+            border-radius: 10px;
+            border: 1px solid var(--blanco-entrada-texto);
+            font-family: var(--fuente1);
+
+        }
+        .primary-button{
+
+            width: 100%;
+            height: 42px;
+            margin-top: 12px;
+            background-color: var(--verde-paleta-secundaria);
+            border: 1px solid var(--verde-paleta-secundaria);
+            border-radius: 10px;
+            font-family: var(--fuente1);
+            font-size: var(--sm);
+            color: white;
+        }
+        .nav-bar{
+            display: flex;
+            width: 100%;
+            border-bottom: 1px solid var(--beige-paleta-secundaria);
+            box-shadow: 0 0 10px 0 #6C7B6D;
+
+        }
+        .lista{
+            padding: 0 20px;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            list-style: none;
+
+        }
+        .menu{
+            width: 20px;
+            height: 20px;
+            background-image: url(./Abienpro_Icons/icon_menu.svg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+        .logo-mini{
+            height: 20px;
+            width: 100px;
+            background-image: url(./Abienpro-logo/logo-peq.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .carrito{
+            width: 21px;
+            height: 21px;
+            background-image: url(./Abienpro_Icons/icon_shopping_cart.svg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .datos{
+            color: var(--gris-oscuro-paleta-principal);
+            font-family: var(--fuente1);
+        }
+        .secundary-button{
+            width: 100%;
+            height: 42px;
+            background-color: white;
+            border: 1px solid var(--verde-paleta-secundaria);
+            border-radius: 10px;
+            font-family: var(--fuente1);
+            font-size: var(--sm);
+            color: var(--verde-paleta-secundaria);
+            
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav-bar">
+        <ul class="lista">
+            <li><a href="/"><div class="menu"></div></a></li>
+            <li><div class="logo-mini"></div></li>
+            <li><div class="carrito"></div></li>
+        </ul>
+    </nav>
+    <div class="login">
+        <div class="form-container">
+            <h1 class="title">!Crea tu cuenta!</h1>
+            <form action="/" class="form">
+                <div>
+                    <label for="name" class="label">Nombre</label>
+                    <p class="datos">Maria Perez</p>
+                    <label for="email" class="label">email</label>
+                    <p class="datos">mariaperez@gmail.com</p>
+                    <label for="password" class="label">Contraseña</label>
+                    <p class="datos">********</p>
+                </div>
+                <div>
+                    <input type="submit" value="Editar" class="secundary-button login-button">
+                </div>
+
+            </form>
+        </div>
+    </div>
+</body>
+</html>

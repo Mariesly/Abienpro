@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&family=Roboto&display=swap" rel="stylesheet">
     <style>
         :root{
             --verde-logo: #006a00;
@@ -27,47 +30,9 @@
             box-sizing: border-box;
         }
         .nav-bar{
-            display: flex;
-            width: 100%;
-            border-bottom: 1px solid var(--beige-paleta-secundaria);
-            box-shadow: 0 0 10px 0 #6C7B6D;
-
+            display: none;
         }
-        .lista{
-            padding: 0 20px;
-            width: 100%;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: center;
-            list-style: none;
-
-        }
-        .menu{
-            width: 20px;
-            height: 20px;
-            background-image: url(./Abienpro_Icons/icon_menu.svg);
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-
-        }
-        .logo-mini{
-            height: 20px;
-            width: 100px;
-            background-image: url(./Abienpro-logo/logo-peq.png);
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-        .carrito{
-            width: 21px;
-            height: 21px;
-            background-image: url(./Abienpro_Icons/icon_shopping_cart.svg);
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
+        
         .menu-producto{
             display: grid;
             grid-template-columns: repeat(auto-fill, 240px);
@@ -117,6 +82,78 @@
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
+        }
+        @media (max-width: 640px) {
+            .nav-bar{
+            display: flex;
+            width: 100%;
+            border-bottom: 1px solid var(--beige-paleta-secundaria);
+            box-shadow: 0 0 10px 0 #6C7B6D;
+
+        }
+        .lista{
+            padding: 0 20px;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            list-style: none;
+
+        }
+        .menu{
+            width: 20px;
+            height: 20px;
+            background-image: url(./Abienpro_Icons/icon_menu.svg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+        .logo-mini{
+            height: 20px;
+            width: 100px;
+            background-image: url(./Abienpro-logo/logo-peq.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .carrito{
+            width: 21px;
+            height: 21px;
+            background-image: url(./Abienpro_Icons/icon_shopping_cart.svg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+            .menu-producto{
+            display: grid;
+            grid-template-columns: repeat(auto-fill, 180px);
+            gap: 20px;
+            place-content: center;
+            margin-top: 50px;
+            padding: 40px;
+            place-items: center;
+        }
+            .card{
+            width: 160px;
+            height: 230px; 
+            }
+            .imagen-producto {
+            width: 160px;
+            height: 160px;
+            }
+            .agregar-carrito{
+             width: 30px;
+             height: 30px;
+             margin-right: 10px;
+            }
+            .texto-info-producto p{
+           margin: 5px 0;
+           font-size: var(--sm);
+           text-align: center;
+             }
+
         }
     </style>
 

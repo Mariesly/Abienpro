@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&family=Roboto&display=swap" rel="stylesheet">
+        <style>
+            :root{
+                --verde-logo: #006a00;
+                --gris-claro-paleta-principal: #C0CEC1;
+                --gris-oscuro-paleta-principal:#6C7B6D;
+                --azul-contraste:#2685A4;
+                --blanco-entrada-texto: #F7F7F7;
+                --beige-paleta-secundaria: #EEEFDC;
+                --verde-paleta-secundaria: #6DA56D;
+                --oscuro: #233124;
+                --fuente1: 'Quicksand', sans-serif;
+                --fuente2: 'Roboto', sans-serif;
+                --sm:14px;
+                --md:16px;
+                --lg:18px;
+            }
+            .mobile-menu{
+                display: flex;
+                flex-direction: column;
+                width: 300px;
+                margin: auto;
+            }
+            .categorias, .menu-cuenta, .salir{
+                font-family: var(--fuente1);
+                font-weight: bold;
+                list-style: none;
+
+            }
+
+            .categorias li a, .menu-cuenta li a, .salir li a{
+                text-decoration: none;
+                color: var(--oscuro);
+
+            }
+            .item, .item2, .salir{
+                margin: 20px;
+            }
+            .item:first-child{
+                font-size:var(--lg);
+                margin-bottom: 20px;
+            }
+            .menu-cuenta{
+                margin-top: 60px;
+                padding-top: 20px;
+                border-top: 1px solid var(--gris-claro-paleta-principal);
+            }
+            .mobile-menu .salir .correo a{
+                color: var(--gris-oscuro-paleta-principal);
+            }
+            .mobile-menu .salir .salire a{
+                color: var(--verde-paleta-secundaria);
+            }
+            .salire{
+                margin-top: 20px;
+            }
+            
+        </style>   
+</head>
+<body>
+    <div class="mobile-menu">
+        <ul class="categorias">
+            <li class="item"><a href="/">CATEGORIAS</a></li>
+            <li class="item"><a href="/">Todo</a></li>
+            <li class="item"><a href="/">Alimentos</a></li>
+            <li class="item"><a href="">Cosmetica</a></li>
+            <li class="item"><a href="/">Medicina</a></li>
+            <li class="item"><a href="/">Jueguetes</a></li>
+        </ul>
+        <ul class="menu-cuenta">
+            <li class="item2"><a href="/">Mi cuenta</a></li>
+            <li class="item2"><a href="/">Mi pedido</a></li>
+        </ul>
+        <ul class="salir">
+            <li class="correo"><a href="/">mariaperez@gmail.com</a></li>
+            <li class="salire"><a href="/">Salir</a></li>
+        </ul>
+    </div>
+</body>
+</html>

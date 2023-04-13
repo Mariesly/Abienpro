@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&family=Roboto&display=swap" rel="stylesheet">
+        <style>
+            :root{
+                --verde-logo: #006a00;
+                --gris-claro-paleta-principal: #C0CEC1;
+                --gris-oscuro-paleta-principal:#6C7B6D;
+                --azul-contraste:#2685A4;
+                --blanco-entrada-texto: #F7F7F7;
+                --beige-paleta-secundaria: #EEEFDC;
+                --verde-paleta-secundaria: #6DA56D;
+                --oscuro: #233124;
+                --fuente1: 'Quicksand', sans-serif;
+                --fuente2: 'Roboto', sans-serif;
+                --sm:14px;
+                --md:16px;
+                --lg:18px;
+            }
+            body{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: var(--fuente1);
+            }
+            .menu-desktop{
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                width: 100px;
+                height: 100px;
+                border-radius: 10px;
+                border: 1px solid var(--gris-claro-paleta-principal);
+                box-shadow: 5px 5px 10px var(--gris-claro-paleta-principal) ;
+                padding: 20px;
+
+            }
+            .lista-menu {
+                display: flex;
+                flex-direction: column;
+                margin: 0;
+                padding: 0;
+                font-size: var(--md);
+                list-style: none;
+                text-align: end;
+   
+
+            }
+            .lista-menu li {
+                margin: 5px 0;
+                
+               }
+
+
+            .item{
+                font-weight: bold;
+                text-decoration: none;
+                color: var(--oscuro);
+
+            }
+            .lista-menu li:last-child{
+                padding-top: 20px;
+                border-top: 1px solid var(--gris-claro-paleta-principal);
+                }
+
+                .lista-menu li:last-child a{
+                    color: var(--gris-oscuro-paleta-principal);
+                }
+            
+    
+        </style>
+</head>
+<body>
+    <div class="menu-desktop">
+        <ul class="lista-menu">
+            <li><a href="/" class="item">Mi pedido</a></li>
+            <li><a href="/" class="item">Mi cuenta</a></li>
+            <li><a href="/" class="item">Salir</a></li>
+        </ul>
+    </div>
+    
+</body>
+</html>
